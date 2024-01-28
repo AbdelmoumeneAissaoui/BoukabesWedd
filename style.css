@@ -1,0 +1,654 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+@import url(https://fonts.googleapis.com/earlyaccess/thabit.css);
+/* ################# animation #################*/
+
+@keyframes text_anim_1 {
+    0% {
+      letter-spacing:0.7em;
+      transform: translateZ(400px) translateY(300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+@keyframes heart {
+    0% {
+        transform: scale(2);
+    }
+    20% {
+        transform: scale(2);
+    }
+    40% {
+        transform: scale(1.5);
+    }
+    60% {
+        transform: scale(1.5);
+    }
+    80% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes focus-in-zoomout {
+			
+    0% {
+        letter-spacing:5em;
+        transform:translateY(300px);
+        filter:blur(12px);
+        opacity:0;
+    }
+    100% {
+        transform:translateY(0px);
+        filter:blur(0);
+        opacity:1;
+    }
+
+}
+
+@keyframes text-flicker-in-glow {
+			
+    0% {
+        opacity:0;
+    }
+    10% {
+        opacity:0;
+        text-shadow:none;
+    }
+    11% {
+        opacity:1;
+        text-shadow:none;
+    }
+    12% {
+        opacity:0;
+        text-shadow:none;
+    }
+    20% {
+        opacity:0;
+        text-shadow:none;
+    }
+    21% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.25);
+    }
+    22% {
+        opacity:0;
+        text-shadow:none;
+    }
+    30% {
+        opacity:0;
+        text-shadow:none;
+    }
+    31% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25);
+    }
+    32% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25);
+    }
+    33% {
+        opacity:0;
+        text-shadow:none;
+    }
+    45% {
+        opacity:0;
+        text-shadow:none;
+    }
+    46% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25);
+    }
+    55% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25);
+    }
+    56% {
+        opacity:0;
+        text-shadow:none;
+    }
+    56% {
+        opacity:0;
+        text-shadow:none;
+    }
+    57% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35);
+    }
+    60% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35);
+    }
+    61% {
+        opacity:0;
+        text-shadow:none;
+    }
+    65% {
+        opacity:0;
+        text-shadow:none;
+    }
+    66% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1);
+    }
+    75% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1);
+    }
+    76% {
+        opacity:0;
+        text-shadow:none;
+    }
+    77% {
+        opacity:0;
+        text-shadow:none;
+    }
+    78% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1);
+    }
+    85% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1);
+    }
+    86% {
+        opacity:0;
+        text-shadow:none;
+    }
+    87% {
+        opacity:0;
+        text-shadow:none;
+    }
+    88% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1);
+    }
+    100% {
+        opacity:1;
+        text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1);
+    }
+}  
+@keyframes bounce-in-bck {
+    0% {
+      transform: scale(1.5);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: scale(1.5);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: scale(1.24);
+      animation-timing-function: ease-in;
+    }
+    89% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: scale(1.04);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
+  
+
+/* ################# animation #################*/
+
+:root {
+
+    --fir:#1F58E8;
+    --sec:#ffffff;
+    --thi:#C0FAFF;
+    --for:#311D3F;
+
+    --firB:#191717;
+    --secB:#7D7C7C;
+    --thiB:#CCC8AA;
+    --forB:#F1EFEF;
+}
+
+h1, h2 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.bg-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit:cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.header {
+    position: relative;
+    width: 50vw;
+    left: 50vw;
+    transform: translateX(-150%);
+    text-align: center;
+    align-items: center;
+
+}
+
+.titel {
+    margin-top: 0%;
+    color: var(--sec);
+    font-size: clamp(1rem, -0.3169rem + 4.6823vw, 1.875rem);
+    animation: bounce-in-bck 3s both;
+}
+.family {
+    color: var(--fir);
+}
+
+.main {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-content:center;
+    overflow: hidden;
+}
+
+.maps {
+    order: 3;
+    width: 60%;
+    height: 480px;
+    text-align: center;
+    justify-items: center;
+    margin: 10px 20px 10px 20px;
+    border-radius: 50px 0px 50px 20px;
+
+}
+.map {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-items: center;
+    box-shadow: 20px 7px 20px #E0E2ED,-20px -7px 20px #E0E2ED;
+    border-radius: 50px 0px 50px 20px;
+
+}
+
+.text {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    margin: 10px 20px 10px 20px;
+    box-shadow: 20px 7px 20px #E0E2ED,-20px -7px 20px #E0E2ED;
+    border-radius: 50px 0px 50px 20px;
+
+}
+.text_invit {
+    text-align: center;
+    color: var(--sec);
+    font-size: 2rem;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Amiri';
+
+}
+
+.word {
+    display:inline-table;
+    position:static;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+#word_Special {
+    color: var(--fir);
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+.doua {
+    display:inline-table;
+    position:static;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+
+
+.calander {
+    order: 1;
+    text-align: center;
+    justify-items: center;
+    margin: 10px 20px 10px 20px;
+    #box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    border-radius: 50px 0px 50px 20px;
+
+}
+.QURAN {
+    order: 0;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    margin: 20px 10px 20px 10px;
+    box-shadow: 20px 7px 20px #E0E2ED,-20px -7px 20px #E0E2ED;
+    border-radius: 50px 0px 50px 20px;
+}
+
+canvas {
+    bottom: 0;
+    position: fixed;
+    left: 50vw;
+    text-shadow: 2px 3px 10px var(--sec), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(0, 0, 0);
+    transform: translate(-50%,-3vh);
+    font-size: 20px;
+}
+
+
+.calendar {
+    position: relative;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 20px 7px 20px #E0E2ED,-20px -7px 20px #E0E2ED;
+    border-radius: 50px 0px 50px 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.calendar__picture {
+    position: relative;
+    width: 300px;
+    height: 240px;
+    padding: 20px;
+    color: #fff;
+    background: #262626 url("https://c1.wallpaperflare.com/preview/486/968/45/people-wedding.jpg") no-repeat center / cover;
+    #background: #262626 url("https://w0.peakpx.com/wallpaper/287/679/HD-wallpaper-wedding-rings-jewellery-close-up-love-concept-wedding-moments-wedding-moments-couple.jpg") no-repeat center / cover;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    background-size: cover;
+    border-radius: 50px 0px 0px 0px;
+}
+.calendar__picture::before {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1));
+}
+.calendar__picture h2 {
+    margin: 0;
+    left: 0;
+    color: #ffffff;
+    text-shadow: 2px 3px 10px var(--fir), 2px 3px 10px var(--fir), 2px 3px 10px var(--fir);
+    animation: text_anim_1 2s;
+}
+.calendar__picture h3 {
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 3px 10px var(--fir), 2px 3px 10px var(--fir), 2px 3px 10px var(--fir);
+    animation: text_anim_1 2s;
+}
+.calendar__date {
+    width: 300px;
+    height: 240px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff8f;
+    border-radius: 0px 0px 50px 20px;
+}
+.calendar__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-weight: 600;
+    color: #262626;
+}
+.calendar__day:nth-child(7) {
+    font-weight: 700;
+}
+.calendar__number {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 25px;
+    color: #262626;
+}
+.calendar__number:nth-child(7n) {
+    font-weight: 700;
+}
+
+
+.calendar__number--current {
+    transform: scale(2);
+    background-image: url(img/dayj.png);
+    background-size:cover;
+    font-weight: 900;
+    font-size: 10px;
+    color: #C52F31;
+    animation: heart 1s infinite;
+}
+
+
+.quran-container {
+    position: relative;
+    font-family: 'Amiri';
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--sec);
+}
+
+.name-of-god {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--sec);
+}
+
+
+.octagon {
+    overflow: hidden;
+}
+.octagon .inner {
+    background: url("img/quran.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.designer {
+    bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    position: fixed;
+    width: 99vw;
+    box-shadow: 20px 7px 20px #E0E2ED,-20px -7px 20px #E0E2ED;
+    border-radius: 50px 0px 50px 20px;
+}
+.name {
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+    color: var(--sec);
+}
+
+.Linkedin {
+    color: var(--fir);
+}
+
+.text_end {
+    order: 4;
+    width: 70%;
+    text-align: center;
+    justify-items: center;
+    margin: 10px 20px 150px 20px;
+    box-shadow: 20px 7px 20px #E0E2ED,-20px -7px 20px #E0E2ED;
+    border-radius: 50px 0px 50px 20px;
+
+}
+
+.wishes {
+    position: relative;
+    font-family: 'Amiri';
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--sec);
+}
+
+
+.contact {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-family: 'Amiri';
+    font-size: 1.8rem;
+    margin: 10px 20px 10px 20px;
+    box-shadow: 20px 7px 20px #E0E2ED,-20px -7px 20px #E0E2ED;
+    border-radius: 50px 0px 50px 20px;
+    flex-wrap: no-wrap;
+
+}
+
+.contact_titre {
+    text-align: right;
+    color: var(--sec);
+    margin-right: 36px;
+}
+.person1 {
+    text-align: right;
+    color: var(--sec);
+    margin-right: 36px;
+}
+
+.person2 {
+    text-align: right;
+    color: var(--sec);
+    margin-right: 36px;
+}
+
+
+.fas {
+    color: var(--fir);
+}
+
+.far {
+    color: var(--fir);
+}
+
+a {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: start;
+        overflow: hidden;
+    }
+    .maps {
+        order: 2;
+        width: 90%;
+        height: 440px;
+        text-align: center;
+        justify-items: center;
+        margin: 10px 10px 10px 10px;
+    
+    }
+/*
+    .text {
+        order: 3;
+        width: 300px;
+        height: 440px;
+        text-align: center;
+        justify-items: center;
+        margin: 10px 10px 10px 10px;
+        box-shadow: 20px 7px 20px #E0E2ED,-20px -7px 20px #E0E2ED;
+        border-radius: 50px 0px 50px 20px;
+    
+    }
+*/
+    .text_end {
+        order: 4;
+        width: 90%;
+        text-align: center;
+        justify-items: center;
+        margin: 10px 20px 100px 20px;
+    }
+    
+    
+    .calendar {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        box-shadow: transparent;
+    }
+    .calander {
+        order: 1;
+        margin: 10px 20px 10px 20px;
+        box-shadow: transparent;
+    
+    }
+    .calendar__date {
+        border-radius: 0px 0px 0px 0px;
+    }
+    .contact {
+        width: 90%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 672px) {
+    .calendar {
+        width: 300px;
+    }
+    .maps {
+        width: 450px;
+    }
+    .text {
+        width: 450px;
+    }
+    .QURAN {
+        width: 450px;
+    }
+    .text_end {
+        width: 450px;
+    }
+}
+
+/* ###################### responsive ######################*/
